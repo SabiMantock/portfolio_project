@@ -98,7 +98,7 @@ hr {
   color: #344563;
 }
 
-.social_media {
+.social_media a {
   color: #7f8cff;
 }
 
@@ -303,4 +303,8 @@ hr {
 
 .arrow {
   width: 8px;
+}
+
+.skill-list {
+  padding: 0;
 }
