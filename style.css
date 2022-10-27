@@ -110,6 +110,10 @@ hr {
   padding: 0;
 }
 
+#social_icons {
+  padding-left: 8px;
+}
+
 .social_media h3 {
   margin: 0;
   font-weight: 500;
