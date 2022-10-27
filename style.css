@@ -6,6 +6,10 @@ body {
   background: #f7f7f9;
 }
 
+a {
+  text-decoration: none;
+}
+
 h3 {
   font-size: 18px;
   font-weight: 700;
@@ -42,6 +46,12 @@ img {
 .logo {
   color: #6070ff;
   font-weight: 700;
+}
+
+.menu_btn {
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
 }
 
 .menu {
@@ -86,6 +96,14 @@ img {
   align-items: center;
   gap: 20px;
   padding: 12px 24px 0 24px;
+  list-style: none;
+}
+
+.social_media h3 {
+  margin: 0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .works {
