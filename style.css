@@ -204,6 +204,7 @@ hr {
   margin-top: 12px;
   list-style: none;
   padding: 0;
+  margin-bottom: 0;
 }
 
 #lang {
@@ -218,8 +219,8 @@ hr {
 }
 
 .button-container {
-  margin-top: 12px;
-  height: 48px;
+  margin-top: 30px;
+  margin-bottom: 12px;
 }
 
 .btn {
