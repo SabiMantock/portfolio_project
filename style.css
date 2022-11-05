@@ -442,8 +442,8 @@ textarea {
   .container {
     width: 50%;
     margin-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 150px;
+    margin-right: 150px;
   }
 
   .card {
@@ -507,6 +507,18 @@ textarea {
 
   .skill-list {
     margin: 0;
+  }
+
+  .langList {
+    display: flex;
+    gap: 10px;
+  }
+
+  .lang {
+    flex-direction: column;
+    min-height: 120px;
+    width: 122px;
+    gap: 0;
   }
 }
 
