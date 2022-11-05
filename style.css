@@ -471,6 +471,7 @@ textarea {
     background-size: contain;
     background-position: center;
   }
+
   .contact_container {
     width: 50%;
     margin: 0 auto;
@@ -508,6 +509,7 @@ textarea {
     margin: 0;
   }
 }
+
 @media (max-width: 769px) {
   .navigation {
     display: none;
