@@ -505,7 +505,7 @@ textarea {
   }
 
   .skill-list {
-    margin: 0;
+    margin: 0 0;
   }
 }
 @media (max-width: 769px) {
