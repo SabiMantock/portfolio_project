@@ -11,7 +11,7 @@
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://github.com/SabiMantock/portfolio_project)
+[Live Demo Link](https://sabimantock.github.io/)
 
 ## Getting Started
 
