@@ -16,11 +16,19 @@ h3 {
   margin: 0;
 }
 
-h1 {
+h2 {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
   color: #172b4d;
+  margin: 0;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 52px;
+  color: #00f;
   margin: 0;
 }
 
@@ -84,6 +92,7 @@ textarea {
   border: none;
   background-color: #fff;
   cursor: pointer;
+  width: 45px;
 }
 
 .nav_wrapper {
@@ -121,7 +130,7 @@ textarea {
   display: flex;
   flex-direction: column;
   width: 100%;
-  min-height: 100vh;
+  min-height: 90vh;
   background-image: url("images/mobile_bg.png");
   background-position: bottom right;
   background-repeat: no-repeat;
@@ -143,7 +152,7 @@ textarea {
 }
 
 .social_media a {
-  color: #7f8cff;
+  color: #0a23ff;
 }
 
 .social_icons {
@@ -206,7 +215,7 @@ textarea {
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
-  color: #344563;
+  color: #485060;
   text-transform: uppercase;
 }
 
@@ -219,14 +228,14 @@ textarea {
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
-  color: #7a869a;
+  color: #485060;
 }
 
 .year p {
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
-  color: #7a869a;
+  color: #485060;
 }
 
 .description {
@@ -251,7 +260,7 @@ textarea {
   margin-bottom: 0;
 }
 
-#lang {
+.langu {
   background: #ebebff;
   border-radius: 8px;
   padding: 4px 12px;
@@ -259,7 +268,7 @@ textarea {
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.03em;
-  color: #6070ff;
+  color: #0018f0;
 }
 
 .button-container {
@@ -381,7 +390,8 @@ textarea {
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
-  color: #ebebff;
+  color: #050505;
+  background-color: #8f9aff;
   margin-top: 12px;
 }
 
@@ -411,11 +421,12 @@ textarea {
 
 #btn_text {
   border: none;
+  background-color: #fff;
   font-weight: 600;
   font-size: 17px;
   line-height: 24px;
   text-transform: capitalize;
-  color: #6070ff;
+  color: #001aff;
   padding: 0;
   margin: 0;
 }
