@@ -390,7 +390,8 @@ textarea {
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
-  color: #ebebff;
+  color: #050505;
+  background-color: #8F9AFF;
   margin-top: 12px;
 }
 
@@ -420,6 +421,7 @@ textarea {
 
 #btn_text {
   border: none;
+  background-color: #fff;
   font-weight: 600;
   font-size: 17px;
   line-height: 24px;
