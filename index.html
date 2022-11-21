@@ -22,7 +22,13 @@
       <button class="menu_btn">
         <img src="images/menu.png" alt="menu-button" />
       </button>
+
       <nav class="navigation">
+        <div class="btn-wrapper">
+          <button class="close_btn">
+            <img src="images/closeBtn.png" alt="menu-button" />
+          </button>
+        </div>
         <ul class="nav_wrapper">
           <li class="nav_item">
             <a href="#" class="nav_link"> Portfolio </a>
@@ -349,24 +355,29 @@
           action="https://formspree.io/f/xknepely"
         >
           <div class="input_form">
-            <label><input
-              type="text"
-              name="name"
-              placeholder="Name"
-              maxlength="30"
-              required
+            <label
+              ><input
+                type="text"
+                name="name"
+                placeholder="Name"
+                maxlength="30"
+                required
             /></label>
           </div>
           <div class="input_form">
-            <label ><input type="email" name="email" placeholder="Email" required /></label>
+            <label
+              ><input type="email" name="email" placeholder="Email" required
+            /></label>
           </div>
           <div class="input_form">
-            <label><textarea
-              name="message"
-              placeholder="Write your message here"
-              maxlength="500"
-              required
-            ></textarea></label>
+            <label>
+              <textarea
+                name="message"
+                placeholder="Write your message here"
+                maxlength="500"
+                required
+              ></textarea>
+            </label>
           </div>
           <div class="contact_button_container">
             <button class="conact_btn" type="submit">
