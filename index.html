@@ -19,19 +19,25 @@
       <a href="#" class="logo">
         <h1>Sabi Mantock</h1>
       </a>
-      <button class="menu_btn">
+      <button class="menu_btn" type="button" onclick="openMobileMenu()">
         <img src="images/menu.png" alt="menu-button" />
       </button>
-      <nav class="navigation">
+
+      <nav class="navigation" id="nav">
+        <div class="btn-wrapper">
+          <button class="close_btn" type="button" onclick="closeMobileMenu()">
+            <img src="images/closeBtn.png" alt="menu-button" />
+          </button>
+        </div>
         <ul class="nav_wrapper">
-          <li class="nav_item">
-            <a href="#" class="nav_link"> Portfolio </a>
+          <li class="nav_item" onclick="closeMobileMenu()">
+            <a href="#portfolio" class="nav_link"> Portfolio </a>
           </li>
-          <li class="nav_item">
-            <a href="#" class="nav_link"> About </a>
+          <li class="nav_item" onclick="closeMobileMenu()">
+            <a href="#about" class="nav_link"> About </a>
           </li>
-          <li class="nav_item">
-            <a href="#" class="nav_link"> Contact </a>
+          <li class="nav_item" onclick="closeMobileMenu()">
+            <a href="#contact" class="nav_link"> Contact </a>
           </li>
         </ul>
       </nav>
@@ -86,7 +92,7 @@
     </section>
 
     <!--Works Section  -->
-    <section class="works">
+    <section class="works" id="portfolio">
       <div class="card">
         <div class="img-container">
           <img src="images/cardImg1.png" alt="Tonic" />
@@ -239,7 +245,7 @@
 
     <!-- About Section -->
 
-    <section class="about">
+    <section class="about" id="about">
       <div class="desk_container">
         <div class="left">
           <div class="title">
@@ -334,7 +340,7 @@
         </div>
       </div>
     </section>
-    <footer class="contact_footer">
+    <footer class="contact_footer" id="contact">
       <div class="contact_container">
         <h3>Contact me</h3>
 
@@ -349,24 +355,29 @@
           action="https://formspree.io/f/xknepely"
         >
           <div class="input_form">
-            <label><input
-              type="text"
-              name="name"
-              placeholder="Name"
-              maxlength="30"
-              required
+            <label
+              ><input
+                type="text"
+                name="name"
+                placeholder="Name"
+                maxlength="30"
+                required
             /></label>
           </div>
           <div class="input_form">
-            <label ><input type="email" name="email" placeholder="Email" required /></label>
+            <label
+              ><input type="email" name="email" placeholder="Email" required
+            /></label>
           </div>
           <div class="input_form">
-            <label><textarea
-              name="message"
-              placeholder="Write your message here"
-              maxlength="500"
-              required
-            ></textarea></label>
+            <label>
+              <textarea
+                name="message"
+                placeholder="Write your message here"
+                maxlength="500"
+                required
+              ></textarea>
+            </label>
           </div>
           <div class="contact_button_container">
             <button class="conact_btn" type="submit">
@@ -376,5 +387,6 @@
         </form>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
