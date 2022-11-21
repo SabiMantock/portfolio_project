@@ -30,14 +30,14 @@
           </button>
         </div>
         <ul class="nav_wrapper">
-          <li class="nav_item">
-            <a href="#" class="nav_link"> Portfolio </a>
+          <li class="nav_item" onclick="closeMobileMenu()">
+            <a href="#portfolio" class="nav_link"> Portfolio </a>
           </li>
-          <li class="nav_item">
-            <a href="#" class="nav_link"> About </a>
+          <li class="nav_item" onclick="closeMobileMenu()">
+            <a href="#about" class="nav_link"> About </a>
           </li>
-          <li class="nav_item">
-            <a href="#" class="nav_link"> Contact </a>
+          <li class="nav_item" onclick="closeMobileMenu()">
+            <a href="#contact" class="nav_link"> Contact </a>
           </li>
         </ul>
       </nav>
@@ -92,7 +92,7 @@
     </section>
 
     <!--Works Section  -->
-    <section class="works">
+    <section class="works" id="porfolio">
       <div class="card">
         <div class="img-container">
           <img src="images/cardImg1.png" alt="Tonic" />
@@ -245,7 +245,7 @@
 
     <!-- About Section -->
 
-    <section class="about">
+    <section class="about" id="about">
       <div class="desk_container">
         <div class="left">
           <div class="title">
@@ -340,7 +340,7 @@
         </div>
       </div>
     </section>
-    <footer class="contact_footer">
+    <footer class="contact_footer" id="contact">
       <div class="contact_container">
         <h3>Contact me</h3>
 
