@@ -19,13 +19,13 @@
       <a href="#" class="logo">
         <h1>Sabi Mantock</h1>
       </a>
-      <button class="menu_btn">
+      <button class="menu_btn" onclick="openMobileMenu()">
         <img src="images/menu.png" alt="menu-button" />
       </button>
 
-      <nav class="navigation">
+      <nav class="navigation" id="nav">
         <div class="btn-wrapper">
-          <button class="close_btn">
+          <button class="close_btn" onclick="closeMobileMenu()">
             <img src="images/closeBtn.png" alt="menu-button" />
           </button>
         </div>
@@ -387,5 +387,6 @@
         </form>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
