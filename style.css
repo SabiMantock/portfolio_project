@@ -469,10 +469,7 @@ textarea {
 /* Desktop view */
 @media (min-width: 769px) {
   .header {
-    /* display: flex; */
     padding: 15px 143px;
-
-    /* justify-content: space-between; */
   }
 
   .menu_btn {
@@ -480,7 +477,7 @@ textarea {
   }
 
   .navigation {
-    display: contents;
+    display: contents !important;
     background: none;
   }
 
