@@ -85,6 +85,7 @@ ul {
   align-items: center;
   height: 24px !important;
   gap: 5px;
+  justify-content: center;
 }
 
 .im {
@@ -271,9 +272,20 @@ ul {
   text-transform: uppercase;
 }
 
-.dot {
+.dot-0 {
   width: 8px;
   height: 8px;
+}
+
+.dot-1 {
+  width: 8px;
+  height: 8px;
+}
+
+.dot-2 {
+  width: 8px;
+  height: 8px;
+  display: none;
 }
 
 .role p {
@@ -619,7 +631,11 @@ ul {
     padding: 24px;
   }
 
-  .rev {
+  .rev-1 {
+    flex-direction: row-reverse;
+  }
+
+  .rev-3 {
     flex-direction: row-reverse;
   }
 
@@ -649,8 +665,8 @@ ul {
   }
 
   .modal-description {
-    width: 50%;
     margin-bottom: 50px;
+    width: 778px;
   }
 
   .modal-img {
@@ -665,6 +681,14 @@ ul {
 @media (min-width: 960px) {
   .about {
     padding: 100px 0 0 0;
+  }
+
+  #live {
+    width: 142px;
+  }
+
+  #source {
+    width: 142px;
   }
 
   .desk_container {
