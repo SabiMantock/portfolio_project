@@ -2,7 +2,7 @@ const nav = document.getElementById('nav');
 const body = document.getElementById('body');
 const pcard = document.getElementById('portfolio');
 const modal = document.getElementById('modal');
-const title = document.getElementById('modal-title-text');
+const title = document.getElementById('modal-title');
 const image = document.getElementById('modal-im');
 const longDes = document.getElementById('des');
 const live = document.getElementById('live');
@@ -10,50 +10,50 @@ const source = document.getElementById('source');
 
 const cards = [
   {
-    title: 'Tonic',
+    pTitle: 'Tonic',
     image: 'images/cardImg1.png',
     longDes:
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    live: '#',
+    live: 'https://sabimantock.github.io/',
     shortDes:
       'A daily selection of privately personalized reads; no accounts or sign- ups required.',
-    source: '#',
+    source: 'https://github.com/SabiMantock/portfolio_project',
     languages: ['html', 'javascript', 'css'],
     roles: ['Canopy', 'Back End Dev', 2015],
   },
   {
-    title: 'Multi-Post Stories',
+    pTitle: 'Multi-Post Stories',
     image: 'images/cardImg2.png',
     longDes:
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    live: '#',
+    live: 'https://sabimantock.github.io/',
     shortDes:
       'A daily selection of privately personalized reads; no accounts or sign- ups required.',
-    source: '#',
+    source: 'https://github.com/SabiMantock/portfolio_project',
     languages: ['html', 'javascript', 'css'],
     roles: ['Canopy', 'Back End Dev', 2015],
   },
   {
-    title: 'Tonic',
+    pTitle: 'Tonic',
     image: 'images/cardImg3.png',
     longDes:
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    live: '#',
+    live: 'https://sabimantock.github.io/',
     shortDes:
       'A daily selection of privately personalized reads; no accounts or sign- ups required.',
-    source: '#',
+    source: 'https://github.com/SabiMantock/portfolio_project',
     languages: ['html', 'javascript', 'css'],
     roles: ['Canopy', 'Back End Dev', 2015],
   },
   {
-    title: 'Multi-Post Stories',
+    pTitle: 'Multi-Post Stories',
     image: 'images/cardImg4.png',
     longDes:
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    live: '#',
+    live: 'https://sabimantock.github.io/',
     shortDes:
       'A daily selection of privately personalized reads; no accounts or sign- ups required.',
-    source: '#',
+    source: 'https://github.com/SabiMantock/portfolio_project',
     languages: ['html', 'javascript', 'css'],
     roles: ['Canopy', 'Back End Dev', 2015],
   },
@@ -77,7 +77,7 @@ cards.map((card, index) => pcard.innerHTML += `<div class="card  rev-${index}">
         </div>
         <div class="content">
           <div class="project_name">
-            <h3 id="title">${card.title}</h3>
+            <h3 id="title">${card.pTitle}</h3>
           </div>
           <div class="project_info">
             ${card.roles.map((role, idx) => `<div class="company">
@@ -101,7 +101,7 @@ cards.map((card, index) => pcard.innerHTML += `<div class="card  rev-${index}">
       `);
 
 const openModal = (index) => {
-  title.innerHTML = cards[index].title;
+  title.innerHTML = cards[index].pTitle;
   image.src = cards[index].image;
   longDes.innerHTML = cards[index].longDes;
   live.href = cards[index].live;
