@@ -13,7 +13,7 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body id="body">
     <!-- Header -->
     <header class="header">
       <a href="#" class="logo">
@@ -93,7 +93,7 @@
 
     <!--Works Section  -->
     <section class="works" id="portfolio">
-      <div class="card">
+      <!-- <div class="card">
         <div class="img-container">
           <img src="images/cardImg1.png" alt="Tonic" />
         </div>
@@ -240,7 +240,7 @@
             <a href="#" class="btn">See Project</a>
           </div>
         </div>
-      </div>
+      </div> -->
     </section>
 
     <!-- About Section -->
@@ -394,10 +394,14 @@
         <div class="modal-title">
           <div class="modal-wrapper">
             <div class="project_name">
-              <h3 id="modal-title-text">Tonic</h3>
+              <h3 id="modal-title">Tonic</h3>
             </div>
             <div class="modal-btn-wrapper">
-              <button class="modal-close_btn" type="button">
+              <button
+                class="modal-close_btn"
+                onclick="closeModal()"
+                type="button"
+              >
                 <img src="images/modal-close.png" alt="menu-button" />
               </button>
             </div>
@@ -406,22 +410,22 @@
             <li class="company">
               <p>canopy</p>
             </li>
-            <img class="dot" src="images/dot.png" alt="dot" />
+            <img class="dot-0" src="images/dot.png" alt="dot" />
             <li class="role">
               <p>Back End Dev</p>
             </li>
-            <img class="dot" src="images/dot.png" alt="dot" />
+            <img class="dot-0" src="images/dot.png" alt="dot" />
             <li class="year">
               <p>2015</p>
             </li>
           </ul>
         </div>
         <div class="modal-img">
-          <img src="images//cardImg1.png" alt="card" />
+          <img src="images//cardImg1.png" alt="card" id="modal-im" />
         </div>
         <div class="modal-content">
           <div class="modal-description">
-            <p>
+            <p id="des">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
               ever since the 1500s, when an unknown printer took a galley of
@@ -430,7 +434,7 @@
               electronic typesetting, remaining essent
             </p>
           </div>
-          <div>
+          <div class="modal_btn">
             <ul class="languages">
               <li class="langu">html</li>
               <li class="langu">css</li>
@@ -438,7 +442,7 @@
             </ul>
             <div class="modal-btns">
               <div class="button-container modal-btn">
-                <a href="#" class="btn modalBtn">
+                <a href="#" target="_blank" class="btn modalBtn" id="live">
                   <p>See Live</p>
                   <div class="im">
                     <svg
@@ -459,8 +463,8 @@
                   </div>
                 </a>
               </div>
-              <div class="button-container">
-                <a href="#" class="btn modalBtn"
+              <div class="button-container modal-btn">
+                <a href="#" target="_blank" class="btn modalBtn" id="source"
                   ><p>See Source</p>
                   <div class="im">
                     <svg
