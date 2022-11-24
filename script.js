@@ -10,8 +10,8 @@ const source = document.getElementById('source');
 const form = document.getElementById('form_container');
 const email = document.getElementById('email');
 const error = document.getElementById('error');
-// const fname = document.getElementById('fname');
-// const message = document.getElementById('msg');
+const fname = document.getElementById('fname');
+const message = document.getElementById('msg');
 
 const cards = [
   {
