@@ -106,6 +106,10 @@ ul {
   font-weight: 700;
 }
 
+#error {
+  color: #f00;
+}
+
 .navigation {
   display: none;
   position: fixed;
