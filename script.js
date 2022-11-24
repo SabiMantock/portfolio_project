@@ -75,26 +75,26 @@ function closeMobileMenu() {
 openMobileMenu();
 closeMobileMenu();
 
- function getFormData() {
+function getFormData() {
   const formData = {
     fname: fname.value,
-     message: message.value,
-     email: email.value,
-   };
-   localStorage.setItem('formData', JSON.stringify(formData));
- }
+    message: message.value,
+    email: email.value,
+  };
+  localStorage.setItem('formData', JSON.stringify(formData));
+}
 
- function persistData() {
+function persistData() {
   const fetchData = localStorage.getItem('formData');
-   if (!fetchData) {
+  if (!fetchData) {
     getFormData();
-   } else {
+  } else {
     JSON.parse(fetchData);
-     fname.setAttribute('value', fetchData.fname);
-     email.setAttribute('value', fetchData.email);
+    fname.setAttribute('value', fetchData.fname);
+    email.setAttribute('value', fetchData.email);
     message.textContent = fetchData.message;
-   }
- }
+  }
+}
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
@@ -103,14 +103,14 @@ form.addEventListener('submit', (e) => {
     error.textContent = 'Please the content of the email field has to be in lower case.';
   } else {
     error.textContent = '';
-     persistData();
+    persistData();
     form.submit();
   }
 });
 
- fname.addEventListener('change', getFormData);
- email.addEventListener('change', getFormData);
- message.addEventListener('change', getFormData);
+fname.addEventListener('change', getFormData);
+email.addEventListener('change', getFormData);
+message.addEventListener('change', getFormData);
 
 // eslint-disable-next-line no-return-assign
 cards.map((card, index) => pcard.innerHTML += `<div class="card  rev-${index}">
